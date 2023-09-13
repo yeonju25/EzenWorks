@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("----------객체와 반복문");
+        
+        let person = {
+            name: "조조",
+            age : 20,
+            location : "장안"
+        };
+        
+        // key 찍어주기
+        const keyArr = Object.keys(person);
+        for(let key of keyArr)
+        console.log(key);
+        
+        // key의 value 찍어주기
+        for(let key of keyArr){
+            console.log(person[key]);
+        }
+        
+        // 같이 찍어주기
+        for(let key of keyArr){
+            let value = person[key];
+            console.log(key, value);
+        }
+
+</script>
+</body>
+</html>

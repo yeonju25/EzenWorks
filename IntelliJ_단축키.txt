@@ -1,0 +1,73 @@
+<IntelliJ 단축키>
+Main method
+메인 메서드 실행: Shift + F10
+메인 메서드 디버그 모드로 실행: Shift + F9
+메인 메서드 실행 중지: Shift + F2
+Hot Deploy로 Build : Ctrl + F9
+되돌리기
+되돌리기: Ctrl + Z
+되돌리기 취소: Ctrl + Shift + Z
+주석
+라인 주석: Ctrl + /
+범위 주석: Ctrl + Shift + /
+라인 수정하기
+라인 복제하기: Ctrl + D
+라인 삭제하기: Ctrl + Y
+문자열 라인 합치기: Ctrl + Shift + J
+라인 단위로 옮기기
+1) 문법에 관계 없이 라인 이동: Alt + Shift + ↑↓
+2) 구문 안에서만 라인 이동 (메서드를 벗어날 수 없음): Ctrl + Shift + ↑↓
+Element 단위로 옮기기: Ctrl + Alt + Shift + ←→
+Ex. html, xml 등의 규격이 정해진 마크업 언어에서 활용
+편집 모드
+세로 편집: Alt + 마우스 왼쪽 버튼
+코드 즉시 보기
+인자값 즉시 보기 (Parameter Info): Ctrl + P
+코드 구현부 즉시 보기 (Quick Definition) : Ctrl + Shift + I
+Doc 즉시 보기 (Quick Documentation) : Ctrl + Q
+포커스
+포커스 에디터
+단어별 이동: Ctrl + ←→
+단어별 선택: Ctrl + Shift + ←→
+라인 처음/끝 이동: Home/End
+라인 전체 선택: Ctrl + Insert
+커서에서 라인 처음/끝까지 선택: Shift + Home/End
+Page Up/Down: Page Up/Page Down
+포커스 특수키
+포커스 범위 한 단계씩 늘리기: Ctrl + W
+포커스 범위 한 단계씩 줄이기: Ctrl + Shift + W
+포커스 뒤로/앞으로 가기: Ctrl + Alt + ←→
+이전 커서가 있던 화면으로 돌아갈 때 유용
+멀티 포커스: Ctrl + Ctrl + ↓ (Ctrl 누른 상태)
+오류 라인으로 자동 포커스: F2
+검색
+검색 테스트
+현재 파일에서 검색: Ctrl + F
+현재 파일에서 교체: Ctrl + R
+전체에서 검색: Ctrl + Shift + F
+전체에서 교체: Ctrl + Shfit + R
+정규표현식으로 검색, 교체: [Find/Replace] -> Regex 체크
+파일, 클래스, 설정 등 검색: Shift + Shift
+검색 기타
+파일 검색: Ctrl + Shift + N
+메서드 검색: Ctrl + Shift + Alt + N
+Action 검색: Ctrl + Shift + A
+최근 열었던 파일 목록 보기: Ctrl + E
+최근 수정한 파일 목록 보기: Ctrl + Shift + E
+클래스 내 Structure 보기: Ctrl + F12
+클래스의 구현체 보기: Ctrl + Alt + B
+Package Explorer
+클래스, 파일 등 생성: Alt + Insert
+이름 변경: Shift + F6
+화면
+Settings: Ctrl + Alt + S
+자동완성
+자동완성
+기본 자동완성: Ctrl + Space
+스마트 자동 완성: Ctrl + Shfit + Space
+static method 자동완성: Ctrl + Space + Space
+getter/setter/생성자 자동완성: Alt + Insert
+Override 메서드 자동완성: Ctrl + I
+코드 완성: Ctrl + Shift + Enter
+퀵픽스 제안: Alt + Enter
+코드를 하나의 라인으로 줄이기: Ctrl + Alt + N

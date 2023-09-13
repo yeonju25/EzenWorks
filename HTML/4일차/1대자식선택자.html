@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header > h1{
+            color: red;
+        } 
+        header nav div > h1 {
+            color: blue;
+        }
+        header nav {
+            color: green;
+        }
+    </style>
+</head>
+<!-- header > h1 헤더 밑에 1대 자식들에게만 적용하겠다. -->
+<!-- header밑 h1 nav h1 div는 1의 자식
+    nav 밑에 들어간 h1 h2 div는 2의 자식? -->
+<body>
+    <header>
+        <h1>월요일1</h1>
+        <nav>
+            <h1>월요일2</h1>
+            <h2>화요일</h2>
+            <div>
+                <h1>월요일3</h1>
+            </div>
+        </nav>
+        <h1>월요일4</h1>
+        <div>
+            화요일
+        </div>
+    </header>
+</body>
+</html>

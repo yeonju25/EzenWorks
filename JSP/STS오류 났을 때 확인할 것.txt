@@ -1,0 +1,8 @@
+< STS 런 돌렸는데 빨간 오류창 뜰 때 >
+
+1. Window Preferences > Server > Runtime 들어가서 Tomcat 삭제하고 다시 추가해보기
+
+2. 패키지 익스플로러 우클릭 > Properies > Project Facet > Axis2 Web Services > Runtimes 안의 Tomcat 체크
+
+3. Properies > Java Build Path > Libraries > Server Runtime[Apache Tomcat v9.0] 삭제
+	> Class path에서 Add Library해서 Server Runtime[Apache Tomcat v9.0] 다시 추가

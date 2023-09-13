@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("-----콜백함수");
+        // 매개변수 인자값을 함수 자체로 던지는 것, 자바에는 없는 개념
+        // parentFunc에 childFunc 자체를 매개변수로 던져줌
+        function parentFunc(callBack){
+            console.log("parent");
+            callBack();
+        }
+
+        function childFunc(){
+            console.log("child");
+        }
+
+        parentFunc(childFunc);
+
+        console.log("-----콜백함수 응용할 예시");
+        function repeat(count){
+            for(let i=0; i<count; i++)
+                console.log(i+1);
+        }
+        repeat(3);
+
+        function repeat2(count){
+            for(let i=0; i<count; i++)
+                console.log((i+1)*10);
+        }
+        repeat2(3);
+
+        console.log("-----콜백함수 응용 결과");
+        function repeat3(count, callBack){
+            for(let i=0; i<count; i++)
+                callBack(i+1);
+        }
+
+        function origin(count){
+            console.log(count);
+        }
+
+        repeat3(3, origin);
+
+        function origin2(count){
+            console.log(count*100);
+        }
+
+        repeat3(3, origin2);
+
+        // 화살표 함수 (java에서 람다라고 하는)
+        console.log("-----------화살표 함수");
+        let greeting2 = ()=> 'Hello world';
+        console.log(greeting2());
+
+        // ${   } 써서 표현할 때는 작은 따옴표를 물결 아래 있는 걸로 써야 인식함
+        let greeting3 = (name) => `Hello ${name}`;
+        console.log(greeting3('박쥐'));
+
+        let greeting4 = (name) => {
+            console.log("화살표 함수 테스트중~~");
+            let text = `Hello ${name}`;
+            return text;
+        };
+        
+        console.log(greeting4('박쥐'));
+        console.log("콜백함수 % 함수표함수");
+
+        let isConfig = true;
+        function confirm(onYes, onNo){
+            if(isConfig) onYes();
+            else onNo();
+        }
+
+        confirm(()=>console.log("승인"), ()=>console.log("취소"));
+        
+        
+        
+        </script>
+</body>
+</html>

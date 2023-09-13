@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greeting(){
+            console.log("Hello");
+        }
+
+        greeting();
+
+        let greet = greeting;
+
+        console.log("------------------");
+        greet();
+
+
+        console.log("------------------");
+        function area(width, height){
+            let area = width* height;
+            console.log("area : " + area);
+        }
+
+        area(10, 20.2);
+
+        function area2(width, height){
+            let area = width* height;
+            return area;
+        }
+
+        let area3 = area2(10,20);
+        console.log("area3 : " + area3);
+
+        let funcB = function(){
+            console.log("funcB()");
+        }
+        funcB();
+
+    </script>
+</body>
+</html>

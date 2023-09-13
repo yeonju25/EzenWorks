@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;member.js&apos; to &apos;script&apos;&#x0D;&#x0A;- Original project: &apos;web-study-09-1&apos;&#x0D;&#x0A;- Destination element: &apos;script&apos;&#x0D;&#x0A;- Original element: &apos;member.js&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" element1="src/main/webapp/member.js" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1686289216431" target="src/main/webapp/script" units="0" version="1.0"/>
+</session>

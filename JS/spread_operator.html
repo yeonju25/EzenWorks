@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("----------스프레드 연산자");
+        
+        let arrA = [1,2,3];
+        
+        // 얕은 복사와 깊은 복사의 의미는 기억!!!
+        // 얕은 복사(Shallow copy)는 참조 타입 데이터가 저장한 '메모리 주소 값'을 복사한 것을 의미한다. 
+        // 반대로 깊은 복사(Deep copy)는 새로운 메모리 공간을 확보해 완전히 복사하는 것을 의미한다.  
+       
+        // 얕은 복사, arrA의 값을 변경하면 arrB의 값도 같이 변경됨 / 반대 개념은 깊은 복사
+        let arrB = arrA;    
+        console.log("before ---------")
+        console.log(arrA);     
+        console.log(arrB);
+        
+         
+        console.log("after ---------")
+        arrA[3] = 4;
+        console.log(arrA);     
+        console.log(arrB);
+        
+        // 깊은 복사
+        console.log("깊은 복사 ---------")
+        let arrC = [...arrA];
+        arrA[4] = 5;
+        console.log(arrA);     
+        console.log(arrC);
+        
+        let arrD = [...arrA, 6,7,8];
+        console.log(arrA);     
+        console.log(arrD);
+        
+
+
+        console.log("----------스프레드 연산자 & 함수");
+        function func(a,b,c){
+            console.log(a,b,c);
+        }
+
+        func(...arrA);
+       
+        
+
+        console.log("----------rest 연산자");
+        function func2(...rest){
+            console.log(rest);
+        }
+        func2(1,2,3,4,5);
+        
+        function func3(...rest){
+            console.log(rest);
+        }
+        func3(...arrA);
+        
+
+        console.log("-----------------");
+        function func4(num, ...rest){
+            console.log(num, rest);
+        }
+        func4(...arrA);
+    
+    
+
+    </script>
+    
+</body>
+</html>

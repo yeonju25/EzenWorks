@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.saeyan.javabeans&apos; to &apos;web-study-07/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;web-study-06&apos;&#x0D;&#x0A;- Destination element: &apos;web-study-07/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;web-study-06/src/main/java/com.saeyan.javabeans&apos;" description="Copy package" destination="=web-study-07/src\/main\/java" element1="/src\/main\/java&lt;com.saeyan.javabeans" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1685600450649" version="1.0"/>
+</session>

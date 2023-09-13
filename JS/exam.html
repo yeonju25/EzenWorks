@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let i = "10";
+        let j = "20";
+
+        let k = Number(i);  // 문자열을 정수로 바꿔줌
+        let n = Number(j);  // interger.parseint랑 비슷한 것
+
+        console.log(i+j);
+        console.log(k+n);
+
+        
+        // 문자열이 섞인 숫자도 숫자만 빼내서 정수로 변환 가능
+        let qq = "10개";
+        let ww = "20개";
+                        
+        let q = parseInt(qq, 10); // 뒤에 10은 십진법 뜻함
+        let w = parseInt(ww, 10);
+
+        console.log("parseInt : " + (q+w));
+
+        
+
+
+    </script>
+</body>
+</html>

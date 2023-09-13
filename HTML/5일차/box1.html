@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1 {width: 100px; height: 100px; background-color: gold;
+            margin: 10px;}
+
+        #box2 {width: 100px; height: 100px; background-color: red;
+             opacity: 0.5; margin: -50px 0 0 50px;}
+             /* opacity 투명도 margin 마이너스로 줄 수도 있다. 그럼 다른거랑 겹침
+                padding은 음수값 적용 X     margin은 음수값 적용 O */
+        
+        #box3{width: 100px; height: 100px; background-color: lightblue;
+            margin: 20px 30px 40px;}
+            /* margin 10px 상하좌우 다 10
+               margin 10px 20px 상하 10 좌우 20
+               margin 10px 20px 30px 상 10 좌우 20 하 30
+               margin 10px 20px 30px 40px 상에서부터 시계방향으로 적용 */
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+</body>
+</html>

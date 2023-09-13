@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="replect">
+        <property name="context-root" value="replect"/>
+        <property name="java-output-path" value="/replect/build/classes"/>
+    </wb-module>
+</project-modules>

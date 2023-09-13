@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input / 사용자에게 값을 받아오는 폼양식</title>
+</head>
+<body>
+    <form action = "/action_page.jsp">
+        이름 : <input type="text" name="fname" maxlength="3"><br><br>
+        성 : &nbsp;&nbsp; <input type="text" name="lname"><br><br>
+                <!--&nbsp; 칸 띄워주는 역할-->
+        비밀번호 : <input type="password" name="password" maxlength="4"><br><br>
+        <input type="submit" value="전송">
+        <input type="reset" value="취소">
+    </form>
+    
+    <!-- 
+    <form></form> 폼 양식을 선언
+    name ="   "   서버에 전달될 때의 이름
+    input type="text"   20자 내외 입력칸
+    submit          입력된 양식 전송
+    action php 실행 언어로 서버에 전송해 동작하게 만듬
+     -->
+
+</body>
+</html>

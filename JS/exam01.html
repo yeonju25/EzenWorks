@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>자바스크립트</h1>
+    <div class="col1">Javascript</div>
+    <h3>JAVA</h3>
+    <div class="col1">Spring</div>
+   <script>
+    
+    // 가장 처음 하나에만 적용됨
+    document.querySelector('.col1').style.backgroundColor='olive';
+
+    // 여러 개 적용하고 싶을 때
+    let abc = document.querySelectorAll('.col1');
+    for(let i=0; i<abc.length; i++)
+        abc[i].style.backgroundColor= "lightblue";
+
+
+
+
+    var i = '1';
+    var j = 1;
+    console.log(i == j);  // = 두개는 값 비교함
+    console.log(i === j); // = 세개는 값이랑 타입까지 비교함
+
+
+    // let str = '      Hello        World        ';
+    // console.log(str.toUpperCase());
+    // console.log(str.indexOf('o'));
+    // console.log(str.length);
+    // console.log(str.trim());
+    // console.log(str.trim().length);
+    
+    // var v1 = 10;      // 사용 자제...하는 추세?
+    // console.log(v1+'10');
+    // var v1 = 20;
+    // console.log("v1 : " + v1);
+
+    // let v2 = 100;   // var말고 let 쓰시오
+    // console.log("v2 : " + v2);
+    // v2 = 200;
+
+    // const v3 = 50;  // java의 final이랑 같은거라고 생각
+    // console.log("v3 : " + v3);
+    // // v3 = 100;  // 수정 안된다. 에러 남
+    // // console.log("v3 : " + v3);
+    
+    // console.log("---------------------");
+
+    // let v4 = ++v2;
+    // let v5 = v2++;
+    // console.log(v2 + " : " + v4 + " : " + v5);
+   </script>
+
+   <input id="night_day" type="button" value="night" onclick="
+        if(document.querySelector('#night_day').value === 'night'){
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';
+            document.querySelector('#night_day').value = 'day';
+        }else{
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';
+            document.querySelector('#night_day').value = 'night';
+        }
+    ">
+
+
+</body>
+</html>

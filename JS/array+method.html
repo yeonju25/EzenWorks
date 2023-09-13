@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("----------배열과 메소드");
+
+        let arrA = [1,2,3];
+        const newLen = arrA.push(4);
+        console.log(arrA + " : " + newLen);
+        
+        const newLen2 = arrA.push(5,6);
+        console.log(arrA + " : " + newLen2);
+
+        // 맨 끝에 집어넣은거 빼내기 pop
+        const removeItem = arrA.pop(); 
+        console.log(arrA + " : " + removeItem);
+        
+        // 맨 처음 것 꺼내기
+        const removeItem2 = arrA.shift(); 
+        console.log(arrA + " : " + removeItem2);
+        
+        // index 0부터 2 전까지 뽑아내기 / (0~1)
+        const sliced = arrA.slice(0,2);
+        console.log(arrA + " : " + sliced);
+
+        
+        console.log("map 함수---------------");
+        let arrB = [1,2,3];
+        const newArr = arrB.map((item) => item * 3);
+        console.log(newArr);
+        
+        let arrC = [
+            {name : "조조", age :20},
+            {name : "유비", age :30},
+            {name : "손권", age :40}
+        ];
+
+        let newArr2 = arrC.map((item) => item.name);
+        console.log(newArr2);
+
+        let newArr3 = arrC.map((item, index) => arrC[index]);
+        console.log(newArr3);
+
+
+    </script>
+</body>
+</html>

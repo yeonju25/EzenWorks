@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{ background-color: seagreen; }
+        div a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 15px;
+            display: inline-block;
+        }
+
+        ul{
+            display: inline-block; margin: 0; padding: 0;
+        }
+
+        ul li{display: inline;}
+        ul li:hover{background: #555;}
+        ul li:hover ul{display: block;}
+        ul li ul{
+            position: absolute;
+            width: 200px;
+            display: none;
+        }
+        ul li ul li{background-color: #555; display: block;}
+        ul li ul li a{display: block !important;}
+        ul li ul li:hover{background-color: #666;}
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#">Useless Link</a>
+        <ul>
+            <li>
+                <a href="#">Dropdown Link</a>
+                <ul>
+                    <li><a href="#">Link1</a></li>
+                    <li><a href="#">Link2</a></li>
+                    <li><a href="#">Link3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

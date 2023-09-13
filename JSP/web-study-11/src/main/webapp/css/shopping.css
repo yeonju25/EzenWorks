@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+#wrap{
+    width: 971px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    color: #8080ff;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+table td, th{
+    border: #d3d3d3 solid 1px;
+    padding: 5px;
+}
+
+th{
+    background: #8080ff;
+    width : 120px;
+}
+
+img{
+    width: 220px;
+    height: 300px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #8080ff;
+}

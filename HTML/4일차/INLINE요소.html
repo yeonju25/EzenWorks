@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline - 요소줄 바꿈이 생기지 않는 태그, 자신만의 영역을 갖지 않는 태그</title>
+
+    <style>
+        form{
+            display: block;
+            /* display : none;
+                하면 안보임 */
+        }
+    </style>
+</head>
+<body>
+    <span>오늘은 월요일</span>
+    <sub>내일은 화요일</sub>
+    <sup>모레는 수요일</sup>
+
+    <form>
+        <input type="radio"><span>5월</span>
+        <input type="checkbox">6월
+        <input type="text" name="name" value="이름" maxlength="3">
+        <input type="submit" value="전송">
+        <button>click</button>
+    </form>
+    <hr>
+    <img src="#" width="100" height="100" alt="없네.">
+    <img src="#" width="100" height="100" alt="진짜">
+    <img src="#" width="100" height="100" alt="가짜">
+
+</body>
+</html>

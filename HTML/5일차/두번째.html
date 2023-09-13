@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul, li{list-style: none;}
+        li a{text-decoration: none;}
+        /* text-decoration none하면 글자 밑줄 없애줌 */
+
+        /* hover 커서 갖다대면 나타나는 이벤트 */
+        li:first-child a:hover{color: red;}
+        li:nth-child(2) a:hover{color: gold;}
+        li:nth-child(3) a:hover{color: green;}
+        li:last-child a:hover{color: plum;}
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">경기도</a></li>
+        <li><a href="#">강원도</a></li>
+        <li><a href="#">충청도</a></li>
+        <li><a href="#">전라도</a></li>
+    </ul>
+</body>
+</html>

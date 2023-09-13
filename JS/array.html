@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("----------배열");
+
+        console.log("----------배열 생성");
+        let arrA = new Array(); // 생성자
+        let arrB = [];          // 배열 리터럴
+
+        let arrC = ["짜장면", "짬뽕", "우동"];
+        
+        console.log(arrC[0]);
+        console.log(arrC[1]);
+        console.log(arrC[2]);
+
+        // 정해진 타입이 없어서 아무거나 다 들어갈 수 있음
+        let arrD = [
+            1,
+            "kor",
+            true,
+            null,
+            ()=>{console.log("람다함수")},
+            function() {},
+            [1,2,3],
+            {a:1}
+        ]
+
+        console.log(arrD);
+        console.log(arrD[4]);
+        
+        console.log(arrC);
+        arrC[3] = "울면";
+        console.log(arrC);
+
+
+
+        console.log("----------구조분할 할당");
+        
+        let arr = ['조조', '손권', '유비'];
+        
+        for(let key in arr)
+            console.log(key);
+
+        let one = arr[0];
+        let two = arr[1];
+        let three = arr[2];
+
+        console.log(one, two, three);
+        
+        let [one2, two2, three2] = arr;
+        console.log(one2, two2, three2);
+        
+        // 이러면 두개만 들어간다~
+        let [one3, two3] = arr;
+        console.log(one3, two3);
+        
+        let [one4, two4, three4, four] = arr;
+        console.log(one4, two4, three4, four);
+
+
+
+        console.log("----------객체 구조분할 할당");
+        let person = {
+            name: "조조",
+            age : 20,
+            location2 : "장안"
+        };
+
+        let {name, age, location2} = person;
+        console.log(name, age, location2);
+        
+        
+
+        console.log("----------함수 매개변수가 객체일 때");
+        function func({name, age, location2}){
+            console.log(name, age, location2);
+        }
+
+        // key 이름을 정확하게 넣어야 값이 제대로 출력됨
+        // l2가 person에 없으므로 undefined 뜸
+        function func2({name, age, l2}){
+            console.log(name, age, l2);
+        }
+
+        function func3(person){
+            let {name, age, location2} = person;
+            console.log(name, age, location2);
+        }
+
+        func(person);
+        func2(person);
+        func3(person);
+
+        
+    </script>
+</body>
+</html>

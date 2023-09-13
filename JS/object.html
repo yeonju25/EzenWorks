@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("----------객체");
+
+        console.log("----------객체 생성");
+        let objA = {};
+        let objB = new Object();
+
+        objA.name = '조조';
+        objA.age = '20';
+
+        console.log(objA);
+
+        let person = {
+            name:"관우",
+            age:50
+        }
+        console.log(person.name);
+        console.log(person["age"]); // 이렇게도 가능
+        
+        // 객체에 추가
+        person.gender = "male";
+        console.log(person);
+        
+        // 변경
+        person.name = '조운';
+        console.log(person);
+        
+        // 삭제
+        delete person.gender;
+        console.log(person);
+
+        let person2 = {
+            name:"관우",
+            age:50,
+
+            eat : function eat(){
+                console.log("먹다");
+            },
+
+            run : () => console.log("달리다"),
+            run2 : (km) => console.log(`${km}로 달리다`),
+            run3 : (km) => console.log(km + "로 달리다")
+        }
+
+        person2.eat();
+        person2.run();
+        person2.run2("20km");
+        person2.run3("80km");
+
+
+
+    </script>
+</body>
+</html>

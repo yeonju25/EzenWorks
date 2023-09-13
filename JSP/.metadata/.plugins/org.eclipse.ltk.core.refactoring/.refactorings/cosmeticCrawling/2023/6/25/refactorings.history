@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.ezen.dao.productVO&apos; to &apos;ProductVO&apos;&#x0D;&#x0A;- Original project: &apos;cosmeticCrawling&apos;&#x0D;&#x0A;- Original element: &apos;com.ezen.dao.productVO&apos;&#x0D;&#x0A;- Renamed element: &apos;com.ezen.dao.ProductVO&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;productVO&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.ezen.dao{productVO.java[productVO" matchStrategy="1" name="ProductVO" qualified="false" references="true" similarDeclarations="false" stamp="1687401721510" textual="false" version="1.0"/>
+</session>

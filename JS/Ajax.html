@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Ajax -- 비동기
+        console.log("--------동기 & 비동기");
+        function longTask(){
+            console.log("오래걸리는 작업");
+        }
+
+        function shortTask(){
+            console.log("바로 끝나는 작업");
+        }
+
+        longTask();     // 10분 걸린다고 가정
+        shortTask();    // 바로 끝남, 그러나 longTask가 10분 작업 끝나야 수행
+
+
+        console.log("---------------------");
+        setTimeout(function(){
+            console.log("1번")}, 10000
+        );
+
+        console.log("2번");
+        console.log("3번");
+        console.log("4번");
+
+
+        function orderCoffee(coffee, time){
+            setTimeout(()=>{console.log(`${coffee} 제조 완료`)}, time)
+        }
+
+        orderCoffee("아메리카노", 1000);
+        orderCoffee("카푸치노", 5000);
+        orderCoffee("레몬티", 3000);
+
+    </script>
+</body>
+</html>

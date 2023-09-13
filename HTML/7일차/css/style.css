@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+body{font-family: "맑은 고딕";}
+ul,li,ol{list-style: none; margin: 0; padding: 0;}
+
+header{width: 1100px; height: 100px; 
+    margin: 0 auto; 
+    background-color: #fff;}
+
+#logo{float: left; 
+    width: 130px; height: 70px;
+    background-color: #fff; 
+    margin :15px 0 0 10px; 
+    }
+
+nav{width: 740px; height: 30px; 
+    background-color: #fff;
+    margin: 30px 30px 0 0; 
+    float: right; }
+
+nav ul{ font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;}
+
+nav ul li{float: left; padding: 0 20px;}
+
+nav ul li a{ text-decoration: none; color: #111;}
+
+nav ul li a:hover{color: seagreen;}
+
+
+#slider{width: 1100px; height: 450px; 
+    margin: 0 auto; 
+    background-color: #fff;}
+
+section{width: 1100px; height: 280px; 
+    margin: 0 auto; 
+    background-color: #fff;}
+
+article {width: 340px; height: 145px; 
+    float:left; margin: 60px 10px;
+    background-color: #fff;
+    border: 3px;}
+
+article h3{margin: 0; font-size: 16px; width: 100%; height: 30px;}
+article img{float: left; margin: 0 10px 0 0;}
+article h4{margin: 0; font-size: 14px; height: 30px;}
+article p{font-size: 12px; font-family: "돋움"; color: #777;}
+article .icon {width: 100px; height: 75px; float: left; 
+                margin: 0 0 0 5px; background-color: #fff; text-align: center;}
+article .icon img{float: left; margin: 0 0 0 20px;}
+article .icon span{width: 100%; text-align: center; float: left; font-size: 12px;
+                margin: 10px 0 0 0; display: block;} 
+
+
+
+/* article p{font-size: 18px; font-weight: bold;} */
+/* article > div {float: left; text-align: center; font-size: 12px; font-weight: bold;} */
+/* img{margin: 0 25px;} */
+
+footer{width: 1100px; height: 100px; 
+    margin: 0 auto; 
+    background-color: #eee;}
+
+footer img{float: left; margin: 20px 0 0 20px;}
+footer p {font-family: "돋움"; font-size: 14px; color: #555; margin: 50px 100px 0 0;
+        float: right;}
+
